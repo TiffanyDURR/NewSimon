@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  font-family: 'Koulen', cursive;
+  font-weight: normal;
+  line-height: 1;
+  text-shadow: #000000 1px 0 10px;
+}
+
+body {
+  text-align: center;
+  padding-top: 100px;
+  color: aliceblue;
+  text-align: center;
+  background-color: #303030;
+  background: url(assets/back04.jpeg);
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  font-size: 30px;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  height: 512px;
+  width: 512px;
+  background: url(assets/background.png);
+  background-color: #303030;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.gameContainer {
+}
+
+.gameContainer,
+.mainbutton {
+  display: block;
+  position: absolute;
+  height: 512px;
+  width: 512px;
+}
+
+.gameContainer img,
+.mainbutton img {
+  position: absolute;
+}
+
+.mainbutton img {
+  top: 175px;
+  left: 175px;
+  z-index: 1000;
+}
+
+.mainbutton img.donttouch {
+  top: 0px;
+  left: 0px;
+  z-index: 1003;
+  cursor: not-allowed;
+}
+
+.id1 {
+  top: 129px;
+  left: 26px;
+  z-index: 0;
+}
+
+.id2 {
+  top: 27px;
+  left: 77px;
+}
+
+.id3 {
+  top: 41px;
+  left: 296px;
+}
+
+.id4 {
+  top: 265px;
+  left: 296px;
+}
+
+.id5 {
+  top: 324px;
+  left: 76px;
+  z-index: 8;
+}
+
+button {
+  margin-top: 20px;
+  width: 120px;
+}
+
+.animation {
+  animation: fade 0.18s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.iadatacontainer,
+.playerdatacontainer {
+  display: none;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.score {
+display: none;
+}
+
+h1 {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
